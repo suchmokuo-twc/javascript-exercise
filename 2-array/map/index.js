@@ -1,3 +1,14 @@
+// const characters = ' abcdefghijklmnopqrstuvwxyz';
+
+// function numberToCharacter(num) {
+//   return characters[num];
+// }
+
+function numberToCharacter(num) {
+  // char code of 'a' is 97.
+  return String.fromCharCode(96 + num);
+}
+
 export default function numberMapToWord(collection) {
-  // TODO 3: 在这里写实现代码
+  return collection.map(numberToCharacter);
 }
