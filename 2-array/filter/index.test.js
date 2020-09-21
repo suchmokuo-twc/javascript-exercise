@@ -11,5 +11,5 @@ test('从collection中选出不重复的数字', () => {
   const collection = [1, 1, 1, 2, 2, 3, 4];
   const result = chooseNoRepeatNumber(collection);
 
-  expect(result).toEqual([1, 2, 3, 4]);
+  expect(result).toEqual([3, 4]);
 });
